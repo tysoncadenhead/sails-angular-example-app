@@ -1,0 +1,10 @@
+<div ng-controller="ListCtrl">
+    <ul class="checklist">
+        <li ng-repeat="item in items">
+            <input type="checkbox" ng-checked="item.completed" /> <span ng-bind="item.description"></span>
+        </li>
+    </ul>
+
+    <button class="btn btn-primary" ng-click="addItem()">Add</button>
+    <button class="btn btn-danger" ng-click="removeItems()">Remove</button>
+</div>

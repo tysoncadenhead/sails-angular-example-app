@@ -2,7 +2,8 @@
 
 define([
   'angular',
-  'sails.io'
+  'sails.io',
+  'controllers'
 ], function (angular, io) {
 
   'use strict';
@@ -13,7 +14,9 @@ define([
     console.log('Socket is now connected');
   });
 
-  app = angular.module('todoIt', []);
+  app = angular.module('todoIt', [
+    'controllers'
+  ]);
 
   return app;
 
